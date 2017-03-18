@@ -51,7 +51,7 @@ class MainViewController: UITableViewController {
         guard segue.identifier == identifier else {
             return
         }
-        
+        //Passing data here
         if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
             let view = segue.destination as! DetailsViewController
             view.fruitBenifits = array[indexPath.row]
